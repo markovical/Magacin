@@ -26,8 +26,8 @@ public class KancelarijskiMaterijal extends Artikal {
 
 	@Override
 	public String toString() {
-		return "KancelarijskiMaterijal [getNaziv()=" + getNaziv() + ", getSifra()=" + getSifra() + ", getOpis()="
-				+ getOpis() + ", getKolicina()=" + getKolicina() + "]";
+		return "Kancelarijski materijal ima sledece karakteristike (Naziv: " + getNaziv() + ", Sifra: " + getSifra() + ", Opis: "
+				+ getOpis() + ", Kolicina: " + getKolicina() + ")";
 	}
 	
 

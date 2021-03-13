@@ -39,8 +39,8 @@ public class KucnaHemija extends Artikal {
 
 	@Override
 	public String toString() {
-		return "KucnaHemija [rokTrajanja=" + rokTrajanja + ", getNaziv()=" + getNaziv() + ", getSifra()=" + getSifra()
-				+ ", getOpis()=" + getOpis() + ", getKolicina()=" + getKolicina() + "]";
+		return "Kucna hemija ima sledece karakteristike (Naziv: " + getNaziv() + ", Sifra: " + getSifra() + ", Opis: "
+				+ getOpis() + ", Kolicina: " + getKolicina() + ", Rok trajanja: " + getRokTrajanja() + ")";
 	}
 	
 

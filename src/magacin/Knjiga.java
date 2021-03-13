@@ -25,8 +25,8 @@ public class Knjiga extends Artikal {
 
 	@Override
 	public String toString() {
-		return "Knjiga [getNaziv()=" + getNaziv() + ", getSifra()=" + getSifra() + ", getOpis()=" + getOpis()
-				+ ", getKolicina()=" + getKolicina() + "]";
+		return "Knjiga ima sledece karakteristike (Naziv: " + getNaziv() + ", Sifra: " + getSifra() + ", Opis: " + getOpis()
+				+ ", Kolicina: " + getKolicina() + ")";
 	}
 
 }
