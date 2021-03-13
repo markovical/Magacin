@@ -15,10 +15,10 @@ public class Magacin implements MagacinInterface {
 			throw new NullPointerException("Artikal ne sme biti null!");
 
 			for (Artikal a : artikli) {
-				if(a.getSifra() == a.getSifra()) {
+				if(a.getSifra() == artikal.getSifra()) {
 					
 					a.setKolicina(a.getKolicina()+1); 
-					System.out.println("Poveæana kolièina artikla");
+					System.out.println("Poveæana kolièina artikla!");
 					return;
 				}
 	}
@@ -38,7 +38,7 @@ public class Magacin implements MagacinInterface {
 				 
 					if(a.getSifra() == artikal.getSifra() && a.getKolicina() > 0) {
 						a.setKolicina(a.getKolicina()-1); 
-						System.out.println("Smanjena kolièina artikla");
+						System.out.println("Smanjena kolièina artikla!");
 						return;
 					}
 				}
@@ -48,7 +48,7 @@ public class Magacin implements MagacinInterface {
 	public LinkedList<Artikal> vratiArtikal(int sifra) {
 		LinkedList<Artikal> rezultat = new LinkedList<Artikal>();
 		if(sifra <= 0)
-			throw new RuntimeException("Sifra artikla ne sme biti negativna ili 0");
+			throw new RuntimeException("Sifra artikla ne sme biti negativna i ne sme biti 0!");
 		
 		for (Artikal a : artikli) {
 			if(a.getSifra()  == sifra)
